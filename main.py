@@ -14,8 +14,7 @@ if __name__ == '__main__':
     fullText = open('cat_in_the_hat.txt').read()
     formattedText = format_text(fullText)
     wordSet = Counter(formattedText)
-    x = 1
+    index = 1
     for word, instances in wordSet.items():
-        print(x, end=' ')
-        print(word, instances)
-        x += 1
+        print(index, word, instances)
+        index += 1
